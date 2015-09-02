@@ -1,20 +1,20 @@
-This is a Simple Nodejs application.Created first Express application,it also tells how properly we can configure it.
 
-Arranged the files and folders in an organized structure.This is an express controller, it shows how to call methods using Express routing Mechanism.
+Use Bower to install AngularJS. Also used ngRoute module to configure the application routing scheme.
 
-Connect Module is being used(middleware),which allows endless extension of application logic.
+Manual bootstrapping is used.
 
-Ejs view is rendered,and it also tells about how to serve static files.
+It also implements two way data binding feature of AngularJS.
 
-Expression session is being used to track user's behaviour.
+It consists of two links Signin and Signup.The user can signin by providing details.Once the user signs in, his credentials would be remembered.The registered user can sign in with his user name and password.(Session data)
 
-This application also displays a logo, which is an image file.
+It prompts the error messages,
+1)if user credentials are not provided,
+2)details are not enetered while signing in,
+3) if password entered is wrong.
 
-This application connects to mongodb(local host).A mongoose schema(users),model has been created.A json file is created to define schema.A document has been posted through the command line.It will be updated in mongodb.You can check the users list using localhost:3000/users.
+Whenever the page is loaded, it redirects the page to other link.
+Suppose the page is http://localhost:3000,it redirects to http://localhost:3000/#!
 
-Command to post data:
-curl -X POST -H "Content-Type: application/json" -d
-'{"firstName":"First", "lastName":"Last","email":"user@example.com","user
-name":"username","password":"password"}' localhost:3000/users
+
 
 
